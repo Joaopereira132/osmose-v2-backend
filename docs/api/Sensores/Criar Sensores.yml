@@ -1,0 +1,22 @@
+info:
+  name: Criar Sensores
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/api/sensor/save
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Sensor de Pressão 02",
+        "osmosis_units_id": 6
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

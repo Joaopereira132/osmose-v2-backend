@@ -1,0 +1,18 @@
+info:
+  name: Criar Hospitais
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/api/hospital/save
+  body:
+    type: json
+    data: '{ "name": "Hospital São João", "location": "Porto" }'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

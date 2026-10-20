@@ -1,0 +1,18 @@
+info:
+  name: Criar Especificação
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/api/specification/save
+  body:
+    type: json
+    data: '{ "description": "Material" }'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

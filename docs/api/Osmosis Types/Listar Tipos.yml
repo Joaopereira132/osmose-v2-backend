@@ -1,0 +1,15 @@
+info:
+  name: Listar Tipos
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:3000/api/osmosis-type/index
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: Criar Unidade
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/api/unit/save
+  body:
+    type: json
+    data: |-
+      {
+        "serial_number": "OSM-2024-001",
+        "status": "Ativo",
+        "hospitals_id": 1,
+        "osmosis_types_id": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
